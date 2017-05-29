@@ -171,6 +171,10 @@ background-size: 100% 100%;
     left:36%;
     /*height:20px;width:20px;*/
 }
+#product1,#product2{
+    height:100%;
+    width:100%;
+}
 #product .deploy-index-0 .direct-line {
        width: 200px;
     height: 160px;
