@@ -1,0 +1,105 @@
+.documment2-left{
+    float:left;
+    width:20%;
+
+}
+.documment2-left li {
+  list-style: none;
+   width:100%;
+}
+ .documment2-left li a {
+ color:#000;
+ display: block;
+padding:10px;
+ width:100%;
+ font-size: 16px;
+     background-color: #fff;
+}
+.documment2-left li a:hover,.documment2-left li a.Docactive  {
+ color:#fff;
+     background-color: #2aa1fb;
+}
+.documment2-right{
+    float:right;
+     width:66%;
+     color:black;
+     margin-top:20%;
+}
+.documment2-right h1{
+font-size:30px;
+margin-bottom:20px;
+}
+.documment2-right .documment-first{
+margin-top:10px;
+margin-bottom:20px;
+}
+.documment2-right a{
+color: #2aa1fb;
+font-size:12px;
+}
+.documment2-right p{
+font-size:14px;
+}
+.docment-main{
+    width:65%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.documment3-right{
+    float:right;
+     width:66%;
+     margin-top:10%;
+}
+.documment3-right h1{
+font-size:30px;
+margin-bottom:30px;
+}
+.documment3-right h6{
+font-size:14px;
+margin-bottom:8px;
+
+}
+.documment3-right p,.documment4-right p{
+font-size:12px;
+margin-bottom:8px;
+}
+.Doch{
+    font-size:14px;
+}
+.documment3-right a{
+ display: block;
+padding:5px;
+ width:40%;
+ font-size: 20px;
+border:1px solid #fff;
+border-radius:3px; 
+}
+
+.documment3-right div,.documment4-right div{
+text-align: center;
+margin-top:40px;
+}
+.documment4-right{
+    float:right;
+     width:66%;
+     color:black;
+     margin-top:10%;
+}
+.documment4-right h1{
+font-size:30px;
+margin-bottom:30px;
+
+}
+.documment4-right h6{
+font-size:14px;
+margin-bottom:8px;
+margin-top:40px;
+}
+.documment4-right a{
+ display: block;
+padding:5px;
+ width:40%;
+ font-size: 20px;
+background-color: #aaa;
+border-radius:3px; 
+}

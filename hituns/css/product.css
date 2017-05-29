@@ -1,0 +1,204 @@
+
+.productbg{
+    height:662px;
+    background-image: url(../image/product/product.png);
+background-size: 100% 100%;
+}
+.index-product{
+ padding-top: 58px;
+    padding-bottom: 50px;
+    height:662px;
+}
+ .index-product-title{
+       margin: 25px  auto 80px;
+       text-align:center;
+       font-size:30px;
+       font-weight:normal;
+       color:black;
+
+ }
+ #index-product-content{
+    width: 1070px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+ }
+ .index-product-left,
+.product-circle,
+.index-product-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.index-product-left {
+    width: 240px;
+    margin-top:-50px;
+}
+.index-product-right {
+    width: 252px;
+    margin-top:30px;
+}
+.index-product-right .index-product-detail,.index-product-left .index-product-detail{
+    text-align: left;
+    margin-bottom:30px;
+}
+
+.index-product .product-detail-content{
+    font-size: 14px;
+    color: #aaa;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+.product-detail-title{
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:20px;
+           text-align:left;
+}
+.product-circle{
+    background-image:url(../image/product/circle.png);
+    width:320px;
+    height:320px;
+    background-size:100% 100%;
+     margin: 0 65px;
+ padding:30px;
+     text-align:center;
+     line-height: 380px;
+     animation: circle 20s linear infinite;
+     position: relative;
+}
+ /*.deploy-index-0 .product-circle,.deploy-index-2 .product-circle,.deploy-index-3 .product-circle{
+         padding:60px 30px 0px 30px;
+ }*/
+
+@keyframes circle {
+      0% {
+        transform: rotate(50deg);
+     
+    }
+         10% {
+        transform: rotate(50deg);
+     
+    }
+    20% {
+        transform: rotate(-40deg);
+       
+    }
+      30% {
+        transform: rotate(-40deg);
+       
+    }
+     40% {
+        transform: rotate(-70deg);
+
+    }
+         50% {
+        transform: rotate(-70deg);
+
+    }
+    60% {
+        transform: rotate(-100deg);
+    
+    }
+       70% {
+        transform: rotate(-100deg);
+    
+    }
+     80% {
+        transform: rotate(-265deg);
+      
+    }
+         90% {
+        transform: rotate(-265deg);
+      
+    }
+       100% {
+        transform: rotate(-310deg);
+      
+    }
+}
+@keyframes circle1 {
+          0% {
+        transform: rotate(-50deg);
+          
+    }
+         10% {
+        transform: rotate(-50deg);
+    }
+    20% {
+        transform: rotate(40deg);
+
+    }
+      30% {
+        transform: rotate(40deg);
+    }
+     40% {
+        transform: rotate(70deg);
+    }
+         50% {
+        transform: rotate(70deg);
+    }
+    60% {
+        transform: rotate(100deg);
+    }
+       70% {
+        transform: rotate(100deg);
+    }
+     80% {
+        transform: rotate(265deg);
+    }
+         90% {
+        transform: rotate(265deg);
+    }
+       100% {
+        transform: rotate(310deg);
+    }
+}
+.product-circle .direct-line {
+    width: 200px;
+    height: 160px;
+    margin: 80px 60px;
+    position: relative;
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+  background-image: url(../image/product/01.png);
+     animation: circle1 20s linear infinite;
+      /*animation: background 20s linear infinite;*/
+}
+.triangle{
+    position: absolute;
+    top:-45px;;
+    left:36%;
+    /*height:20px;width:20px;*/
+}
+#product .deploy-index-0 .direct-line {
+       width: 200px;
+    height: 160px;
+    margin: 80px 60px;
+        /*margin: 80px 60px 50px 60px;*/
+    background-image: url(../image/product/01.png);
+}
+#product  .deploy-index-1 .direct-line {
+     width: 200px;
+    height: 200px;
+    margin: 60px;
+    background-image: url(../image/product/02.png);
+}
+#product .deploy-index-2 .direct-line {
+        width: 200px;
+    height: 160px;
+    margin: 80px 60px;
+    background-image: url(../image/product/03.png);
+}
+#product  .deploy-index-3 .direct-line {
+        width: 200px;
+    height: 140px;
+    margin: 90px 60px;
+    background-image: url(../image/product/04.png);
+}
+#product  .deploy-index-4 .direct-line {
+     width: 200px;
+    height: 200px;
+    margin: 60px;
+    background-image: url(../image/product/05.png);
+}
