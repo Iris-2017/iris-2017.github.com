@@ -27,11 +27,12 @@ padding:10px;
 }
 .documment2-right h1{
 font-size:30px;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 .documment2-right .documment-first{
-margin-top:10px;
-margin-bottom:20px;
+margin-top:15px;
+margin-bottom:30px;
+line-height:20px;
 }
 .documment2-right a{
 color: #2aa1fb;
@@ -52,19 +53,25 @@ font-size:14px;
 }
 .documment3-right h1{
 font-size:30px;
-margin-bottom:30px;
+margin-bottom:50px;
 }
 .documment3-right h6{
 font-size:14px;
-margin-bottom:8px;
+margin-bottom:12px;
 
 }
-.documment3-right p,.documment4-right p{
+.documment3-right p{
 font-size:12px;
-margin-bottom:8px;
+margin-bottom:30px;
+margin-top:10px;
+line-height:20px;
 }
-.Doch{
-    font-size:14px;
+.documment4-right p{
+font-size:12px;
+line-height:20px;
+}
+.documment4-right .Doch{
+    font-size:14px!important;
 }
 .documment3-right a{
  display: block;

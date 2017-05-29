@@ -5,6 +5,7 @@
 		$('.slides li').height(Height);
 		$("#help1_content").height(Height);
 		$(".hitunsContent").height(Height);
+			$(".productbg ").height(Height);
 		$('#dowebok').fullpage({
 			scrollingSpeed: 400,
 			css3: true,
@@ -32,7 +33,7 @@
 								deployIndex = 0
 							}
 							$('#index-deploy-content').removeClass().addClass('deploy-index-' + deployIndex);
-			
+
 							/*$('.rotate-circle').removeClass('animation');
 							setTimeout(function () {
 								$('.rotate-circle').addClass('animation');
@@ -58,9 +59,16 @@
 					// });
 				}
 				if (index == 3) {
+
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
-					$(".shencontent").html('<div class="green"><strong>823,536</strong> <span>用户访问量</span></div><div class="red"><strong>723,536</strong><span>用户使用数</span></div><div class="orange"><strong>523,536</strong><span>网络测试数</span></div><div class="purple"><strong>623,536</strong><span>已服务客户</span></div>');
-					$(".shencontent>div").animate({ marginTop: "0" }, 800);
+					// $(".shencontent").html('<div class="green"><strong>823536</strong> <span>用户访问量</span></div><div class="red"><strong>723536</strong><span>用户使用数</span></div><div class="orange"><strong>523536</strong><span>网络测试数</span></div><div class="purple"><strong>623536</strong><span>已服务客户</span></div>');
+					// console.log(parseInt($(".shencontent strong").eq(0).html()) + parseInt(10 * Math.random()));
+
+
+
+					$(".shencontent>div").animate({ marginTop: "40px" }, 50, function () {
+						$(".shencontent>div").animate({ marginTop: "0" }, 800)
+					});
 				}
 				if (index == 4) {
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
@@ -93,7 +101,7 @@
 				}
 				if (index == 7) {
 					$("#header nav li ").eq(1).addClass("navActive").siblings().removeClass("navActive");
-							//服务模块轮播
+					//服务模块轮播
 					var deployIndex = 0, timerIndex;
 					function deployAuto(time) {
 						//$('.rotate-circle').delay(400).addClass('animation');
@@ -162,64 +170,71 @@
 		});
 	} else {
 		$(".section").height(662);
-			$("body").css({"overflow":"auto"});
-		$("#dowebok").css({"height":1750});
-			$("#help_content").css({"height":662});
-		$("#footer").css({"height":'20%'});
-		
+		$("body").css({ "overflow": "auto" });
+		$("#dowebok").css({ "height": 1750 });
+		$("#help_content").css({ "height": 662 });
+		$("#footer").css({ "height": '20%' });
+
 		//$("#dowebok").height(662*17);
-			//服务模块轮播
-			var deployIndex = 0, timerIndex;
-			function deployAuto(time) {
-				//$('.rotate-circle').delay(400).addClass('animation');
-				timerIndex = setInterval(function () {
-					deployIndex++;
-					if (deployIndex == 4) {
-						deployIndex = 0
-					}
-					$('#index-deploy-content').removeClass().addClass('deploy-index-' + deployIndex);
-					/*$('.rotate-circle').removeClass('animation');
-					setTimeout(function () {
-						$('.rotate-circle').addClass('animation');
-					},1000);*/
-				}, time);
-			}
-
-			deployAuto(5000);
-			$('.index-deploy-item').hover(function () {
-				//$('.rotate-circle').removeClass('animation');
-				clearInterval(timerIndex);
-				deployIndex = $(this).attr('deploy-index');
+		//服务模块轮播
+		var deployIndex = 0, timerIndex;
+		function deployAuto(time) {
+			//$('.rotate-circle').delay(400).addClass('animation');
+			timerIndex = setInterval(function () {
+				deployIndex++;
+				if (deployIndex == 4) {
+					deployIndex = 0
+				}
 				$('#index-deploy-content').removeClass().addClass('deploy-index-' + deployIndex);
-			}, function () {
-				deployAuto(5000);
-			});
-					$(".shencontent").html('<div class="green"><strong>823,536</strong> <span>用户访问量</span></div><div class="red"><strong>723,536</strong><span>用户使用数</span></div><div class="orange"><strong>523,536</strong><span>网络测试数</span></div><div class="purple"><strong>623,536</strong><span>已服务客户</span></div>');
-					$(".shencontent>div").animate({ marginTop: "0" }, 800);
-
-					var partnerhtml = '<div class="partner11">'
-						+ '  <img src="image/index/partner1.png" alt="">'
-						+ '<img src="image/index/partner2.png" alt="">'
-						+ '<img src="image/index/partner3.png" alt="">'
-						+ '<img src="image/index/partner4.png" alt="">'
-						+ '<img src="image/index/partner5.png" alt="">+   </div>'
-						+ '<div class="partner11">'
-						+ '  <img src="image/index/partner6.png" alt="">'
-						+ '<img src="image/index/partner7.png" alt="">'
-						+ '<img src="image/index/partner8.png" alt="">'
-						+ '<img src="image/index/partner9.png" alt="">+   </div>'
-						+ '<div class="partner11">'
-						+ '  <img src="image/index/partner10.png" alt="">'
-						+ '<img src="image/index/partner11.png" alt="">'
-						+ '<img src="image/index/partner12.png" alt="">+   </div>'
-						+ '<div class="partner11">'
-						+ '  <img src="image/index/partner13.png" alt="">'
-						+ '<img src="image/index/partner14.png" alt="">+   </div>'
-					$(".partner").html(partnerhtml);
-					$('.partner11 img').animate({ height: '50px' }, 1000);
-				
+				/*$('.rotate-circle').removeClass('animation');
+				setTimeout(function () {
+					$('.rotate-circle').addClass('animation');
+				},1000);*/
+			}, time);
 		}
+
+		deployAuto(5000);
+		$('.index-deploy-item').hover(function () {
+			//$('.rotate-circle').removeClass('animation');
+			clearInterval(timerIndex);
+			deployIndex = $(this).attr('deploy-index');
+			$('#index-deploy-content').removeClass().addClass('deploy-index-' + deployIndex);
+		}, function () {
+			deployAuto(5000);
+		});
+		$(".shencontent").html('<div class="green"><strong>823,536</strong> <span>用户访问量</span></div><div class="red"><strong>723,536</strong><span>用户使用数</span></div><div class="orange"><strong>523,536</strong><span>网络测试数</span></div><div class="purple"><strong>623,536</strong><span>已服务客户</span></div>');
+		$(".shencontent>div").animate({ marginTop: "0" }, 800);
+
+		var partnerhtml = '<div class="partner11">'
+			+ '  <img src="image/index/partner1.png" alt="">'
+			+ '<img src="image/index/partner2.png" alt="">'
+			+ '<img src="image/index/partner3.png" alt="">'
+			+ '<img src="image/index/partner4.png" alt="">'
+			+ '<img src="image/index/partner5.png" alt="">+   </div>'
+			+ '<div class="partner11">'
+			+ '  <img src="image/index/partner6.png" alt="">'
+			+ '<img src="image/index/partner7.png" alt="">'
+			+ '<img src="image/index/partner8.png" alt="">'
+			+ '<img src="image/index/partner9.png" alt="">+   </div>'
+			+ '<div class="partner11">'
+			+ '  <img src="image/index/partner10.png" alt="">'
+			+ '<img src="image/index/partner11.png" alt="">'
+			+ '<img src="image/index/partner12.png" alt="">+   </div>'
+			+ '<div class="partner11">'
+			+ '  <img src="image/index/partner13.png" alt="">'
+			+ '<img src="image/index/partner14.png" alt="">+   </div>'
+		$(".partner").html(partnerhtml);
+		$('.partner11 img').animate({ height: '50px' }, 1000);
+
+	}
 });
+setInterval(function () {
+	$('.shencontent>div strong').each(function (index, Ele) {
+		sum = parseInt($(Ele).html()) + parseInt(10 * Math.random());
+		$(Ele).html(sum);
+	});
+}, 60000)
+
 //内容适应居中
 var size = $(function () {
 	$("#home_content").css({ "padding-top": ($(".active").height() - $("#home_content").height()) / 6 });

@@ -1,13 +1,13 @@
 
 .productbg{
-    height:662px;
+    height:100%;
     background-image: url(../image/product/product.png);
 background-size: 100% 100%;
 }
 .index-product{
  padding-top: 58px;
     padding-bottom: 50px;
-    height:662px;
+    height:100%;
 }
  .index-product-title{
        margin: 25px  auto 80px;
