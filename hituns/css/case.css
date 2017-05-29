@@ -1,4 +1,4 @@
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
 .cases{
     width:71%;
     margin:0 auto;
@@ -6,10 +6,10 @@
     padding:30px;
 }
 .case1{
-    width:220px;
+    width:20%;
     height:auto;
     float:left;
-    margin:0 50px;
+    margin:0 6.5%;
 }
 }
 @media screen and (max-width:1024px){
@@ -34,7 +34,7 @@
     font-weight:normal;
 }
 #case{
-    height:100%
+    height:100%;
     padding-top:58px;
     padding-bottom:50px;
 }
@@ -53,19 +53,23 @@
     padding:0;
 }
 .casehead{
-    width:220px;
+    width:100%;
 }
 .casebottom h3{
 position: absolute;
 top:-7.5px;
-left:80px;
+left:50%;
+width:30%;
+text-align:center;
+margin-left:-15%;
 background-color: #fff;
 color:#000;
 }
 .casesquare{
   position: absolute;
 bottom:-30px;
-left:80px;  
+left:50%;  
+margin-left:-30px;
 width:60px;
 height:60px;
 background-size:100% 100%!important;

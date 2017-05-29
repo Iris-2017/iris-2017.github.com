@@ -1,13 +1,14 @@
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
 .prices{
     width:75%;
     margin:0 auto ;
     overflow: hidden;
-    padding-top:190px;
+    padding-top:16%;
+    height:60%;
 }
 .price11{
-    width:200px;
-    height:260px;
+    width:19.5%;
+    height:60.5%;
     position: relative;
     zoom:1;
     color:black;

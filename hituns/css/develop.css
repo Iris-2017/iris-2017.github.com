@@ -77,7 +77,7 @@ font-size:12px;
 	color: #2aa1fb;
 }
 
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
 #header {
 	height: 60px;
 }

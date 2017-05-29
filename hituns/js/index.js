@@ -4,7 +4,6 @@
 		// alert(Height);
 		$('.slides li').height(Height);
 		$("#help1_content").height(Height);
-		$(".hitunsContent").height(Height);
 			$(".productbg ").height(Height);
 		$('#dowebok').fullpage({
 			scrollingSpeed: 400,
@@ -103,7 +102,7 @@
 					$("#header nav li ").eq(1).addClass("navActive").siblings().removeClass("navActive");
 					//服务模块轮播
 					var deployIndex = 0, timerIndex;
-					function deployAuto(time) {
+					function deployAuto1(time) {
 						//$('.rotate-circle').delay(400).addClass('animation');
 						timerIndex = setInterval(function () {
 							deployIndex++;
@@ -117,7 +116,7 @@
 							},1000);*/
 						}, time);
 					}
-					deployAuto(4000);
+					deployAuto1(4000);
 				}
 				if (index == 8) {
 					$("#header nav li ").eq(2).addClass("navActive").siblings().removeClass("navActive");

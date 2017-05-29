@@ -30,7 +30,9 @@ header {
 	z-index: 100;
 	background: #333;
 }
-
+.hitunsContent{
+    height:100%;
+}
 #logo {
 	float: left;
 }
@@ -77,7 +79,7 @@ font-size:12px;
 #header nav {
 	margin-top: 20px;
 }
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
 	.footer-main{
         width:68%;
     margin:0 auto;
@@ -85,11 +87,10 @@ font-size:12px;
     overflow: hidden;
 }
 	  #wrap {
-            width: 50%;
-            height: 200px;
-            margin: 200px auto 0;
+            width: 700px;
+            height: 30%;
+            margin: 15% auto 0;
             position: relative;
-            perspective: 800px;
         }
 	#header {
 	position: fixed;
@@ -115,7 +116,7 @@ font-size:12px;
     padding-top:20px;
     overflow: hidden;
 }
-	  #wrap {
+ #wrap {
             width: 70%;
             height: 200px;
             margin: 200px auto 0;
@@ -143,6 +144,7 @@ font-size:12px;
 a,img{border:0;}
 /* flexslider */
 .flexslider{position:relative;width:100%;height:100%;overflow:hidden;background:url(../image/index/loading.gif) 50% no-repeat;}
+.flexslider ul{height:100%;}
 .flexslider li{height:100%;}
 .slides{position:relative;z-index:1;}
 .flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
@@ -167,23 +169,23 @@ a,img{border:0;}
 }
 .orange{
     left:50%;
-    top:190px;
+    top:50%;
     color:orange;
 }
 .red{
-    left:30%;
-    top:380px;
+    left:31%;
+    top:97%;
     color:red;
 }
 .green{
-    left:6%;
-    top:250px;
+    left:9%;
+    top:65%;
     color:green;
 }
 .purple{
   
      left:80%;
-    top:300px;
+    top:78%;
     color:purple;
 }
 .index-deploy-title{
@@ -210,17 +212,17 @@ a,img{border:0;}
      background: url(../image/index/partnerhead.png) no-repeat; 
 }
 .index-deploy2{
-    height:562px;
+    height:100%;
     background-Image:url(../image/index/shenbg.png);
         background-size:100% 100%;
 }
 .index-deploy3{
-    height:562px;
+    height:100%;
     background-Image:url(../image/index/yunbg.png);
     background-size:100% 100%;
 }
 .index-deploy4{
-    height:562px;
+    height:100%;
     background-Image:url(../image/index/partnerbg.png);
     background-size:100% 100%;
 }
@@ -236,10 +238,13 @@ left:180px;
 .shencontent{
      background: url(../image/index/shen.png) no-repeat; 
   width:60%;
-  height:70%;
+  height:60%;
      margin:0 auto;
      position: relative;
 	     background-size:100% 100%;
+}
+#product{
+    height:100%;
 }
 .shencontent>div{
     position: absolute;
@@ -677,9 +682,6 @@ left:180px;
 }
 
 /* about */
-#about_content {
-	height: 510px;
-}
 /*云途生态合作共赢*/
 
 
