@@ -1,6 +1,6 @@
 ﻿$(function () {
 
-	if ($(window).width() > 1025) {
+	if ($(window).width() > 768) {
 		var Height = $(window).height();
 		var Width = $(window).width();
 		$('.slides li').height(Height);

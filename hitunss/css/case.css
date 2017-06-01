@@ -1,4 +1,4 @@
-@media screen and (min-width:1366px){
+/*@media screen and (min-width:1366px){
 .cases{
     width:71%;
     margin:0 auto;
@@ -11,21 +11,21 @@
     float:left;
     margin:0 6.5%;
 }
-}
-@media screen and (max-width:1365px){
+}*/
+/*@media screen and (max-width:1365px){*/
 .cases{
-    width:86%;
+    width:900px;
     margin:0 auto;
     overflow:hidden;
     padding:30px;
 }
 .case1{
-    width:220px;
+    width:240px;
     height:auto;
     float:left;
     margin:0 30px;
 }
-}
+/*}*/
 #case h1{
     font-size:30px;
     margin:25px auto 10px;
