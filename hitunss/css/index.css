@@ -1,13 +1,68 @@
 @charset "utf-8";
-
 /* global */
 a {
 	text-decoration: none;
 	color:#fff;
 }
-/*body{
-	overflow: scroll;
-}*/
+/*轮播*/
+a,img{border:0;}
+/* flexslider */
+.flexslider{position:relative;width:100%;height:100%;overflow:hidden;background:url(../image/index/loading.gif) 50% no-repeat;}
+.flexslider ul{height:100%;}
+.flexslider li{height:100%;}
+.slides{position:relative;z-index:1;}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../image/index/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.flex-direction-nav li a.flex-prev{left:40px;background:url(../image/index/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:40px;background:url(../image/index/next.png) center center no-repeat;}
+/*轮播*/ 
+#home,
+#superhome,
+#about,
+#skill,
+#exp,
+#demo,
+#contact,
+#document,
+#document2,
+#document3,
+#document4,
+#blog,
+#blog1 ,
+#help{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color:#fff;
+	background-size: 100% 100%;
+}
+#home_content,
+#superhome_content,
+#about_content,
+#skill_content,
+#exp_content,
+#demo_content,
+#contact_content,
+#document_content,
+#document2_content,
+#document3_content,
+#document4_content,
+#blog_content,
+#blog1_content,
+#help_content{
+	
+	width: 100%;
+	height: 100%;
+}
+#superhome_content{
+    position:relative;
+     
+}
 .title {
 	text-align: center;
 	margin-top: 100px;
@@ -28,7 +83,7 @@ header {
 	left: 0;
 	height:60px;
 	z-index: 100;
-	background: #333;
+	background: rgba(0,0,0,0.7);
 }
 .hitunsContent{
     height:100%;
@@ -79,85 +134,10 @@ font-size:12px;
 #header nav {
 	margin-top: 20px;
 }
-@media screen and (min-width:1366px){
-	.footer-main{
-        width:68%;
-    margin:0 auto;
-    padding-top:20px;
-    overflow: hidden;
-}
-	  #wrap {
-            width: 700px;
-            height: 30%;
-            margin: 15% auto 0;
-            position: relative;
-        }
-	#header {
-	position: fixed;
-	width: 75%;
-	top: 0;
-	left:50%;
-	margin-left:-35%;
-	height: 76px;
-	z-index: 1;
-}
-#logo {
-	margin: 0 30px;
-}
-#header nav li {
-	float: left;
-	margin: 0 20px;
-}
-}
-@media screen and (max-width:1024px){
-	.footer-main{
-        width:95%;
-    margin:0 auto;
-    padding-top:20px;
-    overflow: hidden;
-}
- #wrap {
-            width: 70%;
-            height: 200px;
-            margin: 200px auto 0;
-            position: relative;
-            perspective: 800px;
-        }
-#header {
-	position: fixed;
-	width: 80%;
-	top: 0;
-	left:50%;
-	margin-left:-40%;
-	height: 76px;
-	z-index: 1;
-}
-#logo {
-	margin: 0 20px;
-}
-#header nav li {
-	float: left;
-	margin: 0 10px;
-}
-}
-/*轮播*/
-a,img{border:0;}
-/* flexslider */
-.flexslider{position:relative;width:100%;height:100%;overflow:hidden;background:url(../image/index/loading.gif) 50% no-repeat;}
-.flexslider ul{height:100%;}
-.flexslider li{height:100%;}
-.slides{position:relative;z-index:1;}
-.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
-.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
-.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../image/index/dot.png) right 0 no-repeat;cursor:pointer;}
-.flex-control-nav .flex-active{background-position:0 0;}
-.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
-.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
-.flex-direction-nav li a.flex-prev{left:40px;background:url(../image/index/prev.png) center center no-repeat;}
-.flex-direction-nav li a.flex-next{right:40px;background:url(../image/index/next.png) center center no-repeat;}
-/*轮播*/  
 /* common style of page */
 .index-deploy,.index-deploy2,.index-deploy3 ,.index-deploy4{
+    height:100%;
+    width:100%;
     padding-top: 58px;
     padding-bottom: 50px;
 }
@@ -572,26 +552,7 @@ left:180px;
     margin:30px;
 	height:0;
 }
-#home,
-#about,
-#skill,
-#exp,
-#demo,
-#contact,
-#document,
-#document2,
-#document3,
-#document4,
-#blog,
-#blog1 ,
-#help{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-	background-color:#fff;
-	background-size: 100% 100%;
-}
+
 #help1{
 	width: 100%;
 	height: 130%;
@@ -632,23 +593,7 @@ left:180px;
 	background-color:#efefef;
 	background-size:100% 100%;
 }
-#home_content,
-#about_content,
-#skill_content,
-#exp_content,
-#demo_content,
-#contact_content,
-#document_content,
-#document2_content,
-#document3_content,
-#document4_content,
-#blog_content,
-#blog1_content,
-#help_content{
-	
-	width: 100%;
-	height: 100%;
-}
+
 #help1_content {
 	width: 100%;
 	height: 100%;
@@ -764,4 +709,74 @@ left:180px;
         .boxs:hover a:nth-of-type(2) {
             transform: rotateY(0deg);
         }
+@media screen and (min-width:1200px){
+.footer-main{
+    width:1024px;
+    margin:0 auto;
+    padding-top:20px;
+    overflow: hidden;
+}
+#wrap {
+    width: 700px;
+    height: 30%;
+    margin: 15% auto 0;
+    position: relative;
+}
+#header {
+	position: fixed;
+	width: 75%;
+	top: 0;
+	left:50%;
+	margin-left:-35%;
+	height: 76px;
+	z-index: 1;
+}
+#logo {
+	margin: 0 30px;
+}
+#header nav li {
+	float: left;
+	margin: 0 20px;
+}
+}
+@media screen and  (max-width: 1024px) {
+	.footer-main{
+        width:95%;
+    margin:0 auto;
+    padding-top:20px;
+    overflow: hidden;
+}
+
+@media screen and  (max-width: 1024px) {
+	.footer-main{
+        width:95%;
+    margin:0 auto;
+    padding-top:20px;
+    overflow: hidden;
+}
+ #wrap {
+            width: 70%;
+            height: 200px;
+            margin: 200px auto 0;
+            position: relative;
+            perspective: 800px;
+        }
+#header {
+	position: fixed;
+	width: 80%;
+	top: 0;
+	left:50%;
+	margin-left:-40%;
+	height: 76px;
+	z-index: 1;
+}
+#logo {
+	margin: 0 20px;
+}
+#header nav li {
+	float: left;
+	margin: 0 10px;
+}
+}
+
 

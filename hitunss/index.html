@@ -1,8 +1,10 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/component.css" />
@@ -14,6 +16,78 @@
     <link rel="stylesheet" href="css/blog.css" />
     <link rel="stylesheet" href="css/help.css" />
     <title>皓天云途</title>
+    <style>
+        .arrow-up {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            width: 40px;
+            height: 40px;
+            z-index: 2;
+            display: block;
+            margin-left: -20px;
+            /*background: url(image/index/arrow.png) no-repeat;*/
+            animation: clickme .5s linear infinite alternate;
+            -webkit-animation: clickme .5s linear infinite alternate;
+            -moz-animation: clickme .5s linear infinite alternate;
+            animation-play-state: running;
+        }
+
+        @-moz-keyframes clickme {
+            0% {
+                opacity: .2;
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                opacity: .8;
+                transform: translate3d(0, 5px, 0)
+            }
+        }
+
+        @-webkit-keyframes clickme {
+            0% {
+                opacity: .2;
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                opacity: .8;
+                transform: translate3d(0, 5px, 0)
+            }
+        }
+
+        @keyframes clickme {
+            0% {
+                opacity: .2;
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                opacity: .8;
+                transform: translate3d(0, 5px, 0)
+            }
+        }
+
+        .videobox {
+            position: relative;
+            background: url(image/index/superindex.png) no-repeat;
+            background-size:100% 100%;
+            width: 100%;
+            height: 100%;
+            background-color: #0c0c14;
+        }
+
+            .video-player{  
+            position: absolute;  
+            right: 0px;  
+            bottom: 0px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            /*加滤镜*/  
+            /*-webkit-filter: grayscale(100%);*/  
+            /*filter:grayscale(100%);*/  
+        }   
+    </style>
 </head>
 
 <body>
@@ -24,13 +98,13 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#page1">首页</a></li>
-                    <li><a href="#page6">产品</a></li>
-                    <li><a href="#page8">案例</a></li>
-                    <li><a href="#page9">价格</a></li>
-                    <li><a href="#page10">文档</a></li>
-                    <li><a href="#page14">博客</a></li>
-                    <li><a href="#page16">帮助</a></li>
+                    <li><a href="#page2">首页</a></li>
+                    <li><a href="#page7">产品</a></li>
+                    <li><a href="#page9">案例</a></li>
+                    <li><a href="#page10">价格</a></li>
+                    <li><a href="#page11">文档</a></li>
+                    <li><a href="#page15">博客</a></li>
+                    <li><a href="#page17">帮助</a></li>
                 </ul>
             </nav>
             <div id="login">
@@ -44,11 +118,27 @@
 
         </div>
     </header>
+
     <!-- header navigation end -->
     <!-- home page -->
     <div id="dowebok">
         <!-- home -->
-        <div class="section one active">
+        <div class="section one">
+
+            <div id="superhome">
+
+                <div id="superhome_content">
+                    <a class="arrow-up" href="#page2">
+                       <img src="image/index/arrow.png" alt="">
+                    </a>
+                    <div class="videobox">
+                        <video id="J_video_player" autoplay loop class="video-player" src="//vodcdn.alicdn.com/oss/ali-video/eff319142d984499b36371268a5e7974/1461050487/video.mp4" type="video/mp4">
+</video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section one">
             <!--首页 -->
             <div id="home">
                 <!--首页内容-->
@@ -87,7 +177,7 @@
                                             <h3 class="deploy-detail-title">多点缓存</h3>
                                             <p class="deploy-detail-content">传输节点采用多点缓存机制缓存机制</br>传输节点采用多点缓存机制缓存机制</br>文字添加
                                             </p>
-                                            </a>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="circle-wheel">
@@ -130,7 +220,10 @@
                         <div class="rong-wrap2">
                             <h1 class="index-deploy-title2">深耕细作，厚积薄发</h1>
                             <div class="shencontent">
-<div class="green"><strong>823536</strong> <span>用户访问量</span></div><div class="red"><strong>723536</strong><span>用户使用数</span></div><div class="orange"><strong>523536</strong><span>网络测试数</span></div><div class="purple"><strong>623536</strong><span>已服务客户</span></div>
+                                <div class="green"><strong>823536</strong> <span>用户访问量</span></div>
+                                <div class="red"><strong>723536</strong><span>用户使用数</span></div>
+                                <div class="orange"><strong>523536</strong><span>网络测试数</span></div>
+                                <div class="purple"><strong>623536</strong><span>已服务客户</span></div>
                             </div>
                         </div>
                     </div>
@@ -214,24 +307,24 @@
                                             <a class="index-product-item" href="javascript:void(0)" deploy-index="1">
                                                 <h3 class="product-detail-title">实时数据</h3>
                                                 <p class="product-detail-content">在数据处理上采用实时产生实时消费</br>的方式，为搭建实时应用系统提供高</br>效的数据服务
-                                         </p>
-                                        </a>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="index-product-detail product-detail-exclusive">
                                             <a class="index-product-item" href="javascript:void(0)" deploy-index="2">
                                                 <h3 class="product-detail-title">消息订阅</h3>
                                                 <p class="product-detail-content">通过数字证书限定可订阅消息的范</br>围，接入云途后，可以随时改变订阅<br>内容，订阅命令及时生效，为开发灵<br>活高效的应用提供支持
-                                         </p>
-                                        </a>
+                                                </p>
+                                            </a>
                                         </div>
                                     </div>
 
                                     <div class="product-circle">
-                                       
+
                                         <div class="direct-line">
-                                           
+
                                         </div>
-                                     <img class="triangle" src="image/product/triangle.gif" alt="">
+                                        <img class="triangle" src="image/product/triangle.gif" alt="">
                                     </div>
 
                                     <div class="index-product-right">
@@ -372,7 +465,7 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a  href="#page11">概述</a>
+                                        <a href="#page11">概述</a>
                                     </li>
                                     <li>
                                         <a class="Docactive" href="#page12">快速开发指南</a>
@@ -413,7 +506,7 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a  href="#page11">概述</a>
+                                        <a href="#page11">概述</a>
                                     </li>
                                     <li>
                                         <a href="#page12">快速开发指南</a>
@@ -541,8 +634,8 @@
                             <p class="help_service">在线客服</p>
                         </div>
                         <div class="footer1 footer44">
-                             <div><img src="image/other/barcode.png" width="80px"alt=""></div>
-                             <div><img src="image/other/lucky.png" width="160px" alt=""></div>
+                            <div><img src="image/other/barcode.png" width="80px" alt=""></div>
+                            <div><img src="image/other/lucky.png" width="160px" alt=""></div>
                         </div>
                     </div>
                 </div>

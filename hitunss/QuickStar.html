@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-1.11.2.minjs"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="../js/respond.min.js"></script>
+    <link rel="stylesheet" href="../css/youaresuperman.css"/>
+
+</head>
+<style>
+    .d1,.e1,.f1,.g1{
+        position: relative;
+    }
+    .d2,.f2{
+        position: absolute;
+        top:240px;
+        left:200px;
+    }
+    .e2{
+        position: absolute;
+        top:240px;
+        left:215px;
+    }
+    .g2{
+        position: absolute;
+        top:240px;
+        left:160px;
+    }
+    @media only screen and (max-width:748px){
+        .dd{
+            width: 100px;
+        }
+
+    }
+</style>
+<body>
+<!--顶部-->
+<div class="navbar navbar-top" style="padding: 0 2em; border-bottom: 1px solid #ddd; padding-bottom: 1em;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">
+                <img id="logo" class="img-responsive dd" src="../images/logo.svg" alt=""/>
+            </a>
+            <a class="navbar-toggle" href="#my-collapse" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="my-collapse">
+            <ul class="nav navbar-nav navbar-left ">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="start.html">快速入门</a></li>
+                <li><a href="developer1.html">开放平台</a></li>
+                <li><a href="case.html">用户案列</a></li>
+                <li><a href="product.html">产品</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="bbs.html">用户社区</a></li>
+                <li><a href="../index.html">关于云途</a></li>
+            </ul>
+            <button class="nav navbar-text navbar-right btn btn-default " style="margin-top: 5px;">
+                <a href="" data-toggle="modal" data-target="#modal-signup">注册</a></button>
+            <button class="nav navbar-text navbar-right btn btn-primary" style="margin-top: 5px;">
+                <a href="" data-toggle="modal" data-target="#modal-login">登录</a></button>
+            </button>
+        </div>
+    </div>
+</div>
+<!--中部-->
+<div class="container-fluid">
+    <div class="row cssbig">
+        <div class="col-sm-12" style="text-align: center">
+            <img src="../images/start_txt.png" alt=""/>
+        </div>
+        <div class="center-block" style="color: deepskyblue;padding: 10px 0;width: 200px;height:20px;font-size: 20px; ">
+            <span style="font-size: 13px;line-height: 20px">●</span>
+            <span style="line-height: 20px">一行代码 快速集成</span>
+            <span style="font-size: 13px;">●</span>
+        </div>
+    </div>
+    <div class="row  cssbig">
+        <div class="col-sm-3 fadeInDown animated" style="text-align: center">
+            <img class="d1" src="../images/start_yxzc.png" alt=""/>
+            <a class="d2">申请邮箱注册</a>
+        </div>
+        <div class="col-sm-3 fadeInDown animated" style="text-align: center">
+            <img class="e1" src="../images/start_hqzs.png" alt=""/>
+            <a  data-toggle="collapse" href="#cr" data-parent="#myid" class="e2">证书申请</a>
+        </div>
+        <div class="col-sm-3 fadeInDown animated" style="text-align: center">
+            <img class="f1" src="../images/start_cjxx.png" alt=""/>
+            <a  data-toggle="collapse" href="#zzx" data-parent="#myid" class="f2">创建消息类型</a>
+        </div>
+        <div class="col-sm-3 fadeInDown animated" style="text-align: center">
+            <img class="g1" src="../images/start_sdk.png" alt=""/>
+            <a  data-toggle="collapse" href="#zxbm" data-parent="#myid" class="g2">引入SDK并创建实例初始化</a>
+        </div>
+    </div>
+
+    <div class="row" style="width: 91%;margin: 100px auto;">
+        <div class="panel-group" id="myid">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a data-toggle="collapse" href="#cr" data-parent="#myid">
+                        第一步： 证书申请（以下为在线测试证书）</a></h3>
+                </div>
+                <div class="panel-collapse in" id="cr">
+                    <div class="panel-body">
+                        <div class="example" >
+                            <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="str">"check"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"6a01f4a52c71c0f018d45d3ea8e307fe"</span><span class="pun">,</span></li><li class="L2"><span class="pln">     </span><span class="str">"info"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">         </span><span class="str">"cmb"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">           </span><span class="str">"id"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"{61C4DA8C-2BEA-4103-942A-A074F7CC6A6B}"</span><span class="pun">,</span></li><li class="L5"><span class="pln">                   </span><span class="str">"ip"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"127.0.0.1"</span><span class="pun">,</span></li><li class="L6"><span class="pln">                   </span><span class="str">"notify"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"@cmb_test@"</span><span class="pun">,</span></li><li class="L7"><span class="pln">                   </span><span class="str">"subscribe"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"@cmb_test@"</span><span class="pun">,</span></li><li class="L8"><span class="pln">                   </span><span class="str">"user"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span></li><li class="L9"><span class="pln">                   </span><span class="str">"valid"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"2016-12-31"</span></li><li class="L0"><span class="pln">           </span><span class="pun">}</span></li><li class="L1"><span class="pln">     </span><span class="pun">}</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info" >
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a  data-toggle="collapse" href="#zzx" data-parent="#myid">第二步： 创建消息类型</a></h3>
+                </div>
+                <div id="zzx" class="panel-collapse in">
+                    <div class="panel-body">
+                        <div class="panel">定义消息类型保证不重复即可，格式例如：@cmb_test@</div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a data-toggle="collapse" href="#zxbm" data-parent="#myid">第三步： 引入 SDK 并创建实例初始化</a></h3>
+                </div>
+                <div id="zxbm" class="panel-collapse in">
+                    <div class="panel-body">
+                        <article>
+                            <div class="example">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        引入 yuntu JavaScript SDK
+                                        你需要用你的证书信息 或 用我们做演示的证书 来实例化一个websocket对象。
+                                        接着，注册到服务器，并连接到服务器。
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="example" contenteditable="false">
+                                <pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">xmlns</span><span class="pun">=</span><span class="atv">"http://www.w3.org/1999/xhtml"</span><span class="tag">&gt;</span></code></li><li class="L1"><code><span class="pln">  </span><span class="tag">&lt;head&gt;</span></code></li><li class="L2"><code><span class="pln">  </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"Content-Type"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"text/html; charset=utf-8"</span><span class="tag">/&gt;</span></code></li><li class="L3"><code><span class="pln">  </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"cmb.1.0.js"</span><span class="tag">&gt;&lt;/script&gt;</span></code></li><li class="L4"><code><span class="pln">  </span><span class="tag">&lt;title&gt;</span><span class="pln">云途demo</span><span class="tag">&lt;/title&gt;</span></code></li><li class="L5"><code><span class="pln">  </span><span class="tag">&lt;script&gt;</span></code></li><li class="L6"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> sck </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span></code></li><li class="L7"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> cert </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L8"><code><span class="pln">  </span><span class="str">"check"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"6a01f4a52c71c0f018d45d3ea8e307fe"</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">  </span><span class="str">"info"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L0"><code><span class="pln">  </span><span class="str">"cmb"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">  </span><span class="str">"id"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"{61C4DA8C-2BEA-4103-942A-A074F7CC6A6B}"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">  </span><span class="str">"ip"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"127.0.0.1"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">  </span><span class="str">"notify"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"@cmb_test@"</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">  </span><span class="str">"subscribe"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"@cmb_test@"</span><span class="pun">,</span></code></li><li class="L5"><code><span class="pln">  </span><span class="str">"user"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">  </span><span class="str">"valid"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"2016-12-31"</span></code></li><li class="L7"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L8"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L9"><code><span class="pln">  </span><span class="pun">};</span></code></li><li class="L0"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> init</span><span class="pun">(){</span></code></li><li class="L1"><code><span class="pln">  sck </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> cmb</span><span class="pun">.</span><span class="pln">ws</span><span class="pun">.</span><span class="pln">websocket</span><span class="pun">(</span><span class="str">''</span><span class="pun">,</span><span class="pln">cert</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">  </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">event</span><span class="pun">){</span></code></li><li class="L3"><code><span class="pln">  document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"responses"</span><span class="pun">).</span><span class="pln">innerHTML </span><span class="pun">=</span><span class="pln"> </span><span class="str">"初始化成功!"</span><span class="pun">;</span></code></li><li class="L4"><code><span class="pln">  sck</span><span class="pun">.</span><span class="kwd">register</span><span class="pun">(</span><span class="pln">cert</span><span class="pun">);</span></code></li><li class="L5"><code><span class="pln">  </span><span class="pun">},</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">event</span><span class="pun">){</span></code></li><li class="L6"><code><span class="pln">  </span><span class="com">//收到消息后处理</span></code></li><li class="L7"><code><span class="pln">  document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"responses"</span><span class="pun">).</span><span class="pln">innerHTML </span><span class="pun">+=</span><span class="pln"> </span><span class="str">"&lt;br/&gt;收到消息："</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> event</span><span class="pun">.</span><span class="pln">data</span><span class="pun">;</span></code></li><li class="L8"><code><span class="pln">  </span><span class="pun">},</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">event</span><span class="pun">){</span></code></li><li class="L9"><code><span class="pln">  </span><span class="com">//关闭连接后处理</span></code></li><li class="L0"><code><span class="pln">  document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"responses"</span><span class="pun">).</span><span class="pln">innerHTML </span><span class="pun">+=</span><span class="pln"> </span><span class="str">"&lt;br/&gt;"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> event</span><span class="pun">.</span><span class="pln">data</span><span class="pun">;</span></code></li><li class="L1"><code><span class="pln">  </span><span class="pun">},</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">event</span><span class="pun">){</span></code></li><li class="L2"><code><span class="pln">  </span><span class="com">//出现错误后处理</span></code></li><li class="L3"><code><span class="pln">  document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"responses"</span><span class="pun">).</span><span class="pln">innerHTML </span><span class="pun">+=</span><span class="pln"> </span><span class="str">"&lt;br/&gt;"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> event</span><span class="pun">.</span><span class="pln">data</span><span class="pun">;</span></code></li><li class="L4"><code><span class="pln">  </span><span class="pun">});</span></code></li><li class="L5"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L6"><code><span class="pln">  </span><span class="com">/**</span></code></li><li class="L7"><code><span class="com">  * 发送消息</span></code></li><li class="L8"><code><span class="com">  * @param msg</span></code></li><li class="L9"><code><span class="com">  */</span></code></li><li class="L0"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> send_msg</span><span class="pun">(){</span></code></li><li class="L1"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> note </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"msg"</span><span class="pun">).</span><span class="pln">value</span><span class="pun">;</span></code></li><li class="L2"><code><span class="pln">  </span><span class="kwd">var</span><span class="pln"> msg </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">  </span><span class="str">"note"</span><span class="pun">:</span><span class="pln">note</span></code></li><li class="L4"><code><span class="pln">  </span><span class="pun">};</span></code></li><li class="L5"><code><span class="pln">  sck</span><span class="pun">.</span><span class="pln">uploadmsg</span><span class="pun">(</span><span class="pln">msg</span><span class="pun">,</span><span class="str">"@cmb_test@"</span><span class="pun">);</span></code></li><li class="L6"><code><span class="pln">  document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"send"</span><span class="pun">).</span><span class="pln">innerHTML </span><span class="pun">+=</span><span class="pln"> </span><span class="str">"&lt;br/&gt;发送的消息："</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> JSON</span><span class="pun">.</span><span class="pln">stringify</span><span class="pun">(</span><span class="pln">msg</span><span class="pun">);</span></code></li><li class="L7"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L8"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> close</span><span class="pun">()</span></code></li><li class="L9"><code><span class="pln">  </span><span class="pun">{</span></code></li><li class="L0"><code><span class="pln">  sck</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span></code></li><li class="L1"><code><span class="pln">  </span><span class="pun">};</span></code></li><li class="L2"><code><span class="pln">  </span><span class="kwd">function</span><span class="pln"> getmsg</span><span class="pun">(){</span></code></li><li class="L3"><code><span class="pln">  </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">sck</span><span class="pun">){</span></code></li><li class="L4"><code><span class="pln">  sck</span><span class="pun">.</span><span class="pln">subscribe</span><span class="pun">(</span><span class="str">"@cmb_test@"</span><span class="pun">);</span></code></li><li class="L5"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L6"><code><span class="pln">  </span><span class="pun">}</span></code></li><li class="L7"><code><span class="pln">  </span><span class="tag">&lt;/script&gt;</span></code></li><li class="L8"><code><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></code></li><li class="L9"><code><span class="pln">  </span><span class="tag">&lt;body&gt;</span></code></li><li class="L0"><code><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-success"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">init</span><span class="pun">();</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">初始化</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L1"><code><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-success"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">getmsg</span><span class="pun">();</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">订阅消息</span><span class="tag">&lt;/buttonn&gt;</span></code></li><li class="L2"><code><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-danger"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">close</span><span class="pun">();</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">断开连接</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L3"><code><span class="pln">  </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-group-addon"</span><span class="tag">&gt;</span><span class="pln">发送的消息</span><span class="tag">&lt;/span&gt;</span></code></li><li class="L4"><code><span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"msg"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"msg"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"这是一个测试消息"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"用户名"</span><span class="tag">&gt;</span></code></li><li class="L5"><code><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-default"</span><span class="pln">  </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">send_msg</span><span class="pun">();</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">发送消息</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L6"><code><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"send"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">border</span><span class="pun">:</span><span class="lit">1px</span><span class="pln"> solid </span><span class="com">#F00;OVERFLOW-Y: auto; OVERFLOW-X:hidden;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></code></li><li class="L7"><code><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"responses"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">border</span><span class="pun">:</span><span class="lit">1px</span><span class="pln"> solid </span><span class="com">#F00;OVERFLOW-Y: auto; OVERFLOW-X:hidden;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></code></li><li class="L8"><code><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></code></li><li class="L9"><code><span class="pln">  </span><span class="tag">&lt;/html&gt;</span></code></li></ol></pre>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--中部2-->
+
+            <div class="row" >
+                <div class="col-sm-12">
+                    <h4>在线测试</h4>
+                </div>
+                <div class=" col-sm-12 ">
+                    <article style="border: 1px solid #ddd;">
+                        <div class="example" contenteditable="false">
+                            <div class="panel">
+                                <div class="input-group">
+                                    <button class="btn btn-primary" onclick="init();">初始化</button>
+                                    <button class="btn btn-primary" onclick="getmsg();">订阅消息</button>
+                                    <button class="btn btn-default" onclick="closeSkt();">断开连接</button>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">发送的消息</span>
+                                    <input type="text" name="msg" value="这是一个测试消息" class="form-control" placeholder="用户名">
+          <span class="input-group-btn">
+            <button class="btn btn-default" onclick="send_msg();">发送消息</button>
+          </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example" contenteditable="false">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">发送的消息</span>
+                                        <div  style="height: 100px;OVERFLOW-Y: auto; OVERFLOW-X:hidden;background:#000; color:#0f0;"></div>
+                                        <span  style="overflow:hidden"></span>
+
+                                    </div>
+                                    <div class="input-group">
+                                        <br>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">接收的消息</span>
+                                        <div  style="height: 200px;OVERFLOW-Y: auto; OVERFLOW-X:hidden;background:#000; color:#0f0;"><br>undefined<br>连接已断开<br>undefined<br>连接已断开</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example" contenteditable="false">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <button class="btn btn-default"><a href="/static/www/cmb/download/cmb_demo.rar">获取源码</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<!--底部-->
+<div class="container-fluid">
+    <div class="bottom1">
+        <a href="#" class="home-footer-list-head" target="_blank"> © 2012-2015 杭州皓天信息技术有限公司</a>
+        &nbsp;&nbsp;
+
+        <a href="http://www.miitbeian.gov.cn" class="home-footer-list-head" target="_blank">浙ICP备11023927号-1</a>
+        访问量：336
+    </div>
+</div>
+
+<div id="modal-login" class="modal fade">
+    <div class="modal-dialog modal-padding modal-width">
+        <div class="modal-content" style="padding: 1%">
+            <form method="post" id="loginForm" class="form-horizontal " role="form">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center">登录</h1>
+                </div>
+                <div class="modal-body ">
+                    <div class="form-group " id="error-login"></div>
+                    <div class="form-group input-group">
+                        <div class="input-group-addon fix-border"><i class="icon icon-user"></i></div>
+                        <input type="text" placeholder="用户名" id="login-username" class="form-control">
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-addon fix-border"><i class="icon icon-key"></i></div>
+                        <input type="password" id="login-password" placeholder="密码" class="form-control ">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <input type="submit" class="btn btn-primary" value="登录" data-loading="稍后...">
+                </div>
+                <input type="hidden" name="_csrf" value="e0c77ac4eec73dbccec02134bde1940909542de3"></form>
+        </div>
+    </div>
+</div>
+<div id="modal-signup" class="modal fade">
+    <div class="modal-dialog modal-padding modal-width">
+        <div class="modal-content" style="padding: 1%">
+            <form method="post" id="signupForm" class="form-horizontal " role="form">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>-->
+                    <h1 class="modal-title text-center">注册</h1>
+                </div>
+                <div class="modal-body ">
+                    <div class="form-group " id="error-signup"></div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon fix-border"><i class="icon  icon-envelope"></i></span>
+                            <input type="text" placeholder="电子邮箱" id="FCODE" name="FCODE" class="form-control ">
+                        </div>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-addon fix-border"><i class="icon icon-user"></i></div>
+                        <input type="text" placeholder="用户名" id="FNAME" name="FNAME" class="form-control">
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-addon fix-border"><i class="icon icon-key"></i></div>
+                        <input type="password" name="FPASSWORD" id="FPASSWORD" placeholder="密码" class="form-control ">
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon fix-border"><i class="icon icon-home"></i></span>
+                            <input type="text" id="FLDTNAME" name="FLDTNAME" placeholder="企业名称" class="form-control ">
+                        </div>
+                    </div>
+                    <div class="text-center"><strong>创建一个免费帐号，代表您已接受&nbsp;
+                        <a href="http://www.hituns.com:81/protocol" target="_blank" style="color: #7E7EE5;">云途用户协议。</a></strong></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <input type="submit" class="btn btn-primary" value="创建一个新账号" data-loading="稍后...">
+                </div>
+                <input type="hidden" name="_csrf" value="e0c77ac4eec73dbccec02134bde1940909542de3"></form>
+        </div>
+    </div>
+</div>
+<div class="hidden-xs" style="position: fixed;z-index: 9999;right: 5px;top: 800px;">
+    <div class="top" style="margin-top:5px;">
+        <a href="#"><img id="ev-right-back" style="CURSOR: pointer" border="0" src="../images/totop.png"></a>
+    </div>
+</div>
+
+</body>
+<script>
+    (function(){//IE低版本不支持svg矢量图，替换为png图
+        var logo =document.getElementById("logo");
+        var agent =navigator.userAgent.replace(/\s+/ig,"");
+        if(agent.indexOf("MSIE8")!=-1||agent.indexOf("MSIE7")!=-1||agent.indexOf("MSIE6")!=-1||agent.indexOf("MSIE5")!=-1){
+            logo.src ="../images/logo_bak.png";
+        }
+    })();
+</script>
+</html>

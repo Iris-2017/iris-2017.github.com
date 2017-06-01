@@ -1,26 +1,34 @@
 ﻿$(function () {
+
 	if ($(window).width() > 1025) {
 		var Height = $(window).height();
-		// alert(Height);
+		var Width = $(window).width();
 		$('.slides li').height(Height);
 		$("#help1_content").height(Height);
-			$(".productbg ").height(Height);
+		// $(".productbg ").height(Height);
+		//  $('#J_scroll_trigger').height(Height);
+		//   $('#J_scroll_trigger').width(Width);
 		$('#dowebok').fullpage({
 			scrollingSpeed: 400,
 			css3: true,
 			resize: true,
-			anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9", "page10", "page11", "page12", "page13", "page14", "page15", "page16", "page17"],
+			anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9", "page10", "page11", "page12", "page13", "page14", "page15", "page16", "page17", "page18"],
 			verticalCentered: false,
 			afterRender: function () {
+				$("header").css({ "display": "none" });
 				$("#home").css({ "display": "block" }).addClass("home_zoom");
 				$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
 
 			},
 			afterLoad: function (anchorLink, index) {
+					$("header").css({ "display": "block" });
 				if (index == 1) {
-					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
+					$("header").css({ "display": "none" });
 				}
-				if (index == 2) {
+					if (index == 2) {
+					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
+					}
+				if (index == 3) {
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
 					//服务模块轮播
 					var deployIndex = 0, timerIndex;
@@ -57,7 +65,7 @@
 					// 	deployAuto(5000);
 					// });
 				}
-				if (index == 3) {
+				if (index == 4) {
 
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
 					// $(".shencontent").html('<div class="green"><strong>823536</strong> <span>用户访问量</span></div><div class="red"><strong>723536</strong><span>用户使用数</span></div><div class="orange"><strong>523536</strong><span>网络测试数</span></div><div class="purple"><strong>623536</strong><span>已服务客户</span></div>');
@@ -69,10 +77,10 @@
 						$(".shencontent>div").animate({ marginTop: "0" }, 800)
 					});
 				}
-				if (index == 4) {
+				if (index == 5) {
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
 				}
-				if (index == 5) {
+				if (index == 6) {
 					$("#header nav li ").eq(0).addClass("navActive").siblings().removeClass("navActive");
 					var partnerhtml = '<div class="partner11">'
 						+ '  <img src="image/index/partner1.png" alt="">'
@@ -95,10 +103,10 @@
 					$(".partner").html(partnerhtml);
 					$('.partner11 img').animate({ height: '50px' }, 1000);
 				}
-				if (index == 6) {
+				if (index == 7) {
 					$("#header nav li ").eq(1).addClass("navActive").siblings().removeClass("navActive");
 				}
-				if (index == 7) {
+				if (index == 8) {
 					$("#header nav li ").eq(1).addClass("navActive").siblings().removeClass("navActive");
 					//服务模块轮播
 					var deployIndex = 0, timerIndex;
@@ -118,16 +126,13 @@
 					}
 					deployAuto1(4000);
 				}
-				if (index == 8) {
+				if (index == 9) {
 					$("#header nav li ").eq(2).addClass("navActive").siblings().removeClass("navActive");
 				}
-				if (index == 9) {
+				if (index == 10) {
 					$("#header nav li ").eq(3).addClass("navActive").siblings().removeClass("navActive");
 					$(".price11 h1").after("<div class='title_en'></div>");
 					$(".title_en").animate({ width: "60px" }, 800);
-				}
-				if (index == 10) {
-					$("#header nav li ").eq(4).addClass("navActive").siblings().removeClass("navActive");
 				}
 				if (index == 11) {
 					$("#header nav li ").eq(4).addClass("navActive").siblings().removeClass("navActive");
@@ -139,15 +144,18 @@
 					$("#header nav li ").eq(4).addClass("navActive").siblings().removeClass("navActive");
 				}
 				if (index == 14) {
-					$("#header nav li ").eq(5).addClass("navActive").siblings().removeClass("navActive");
+					$("#header nav li ").eq(4).addClass("navActive").siblings().removeClass("navActive");
 				}
 				if (index == 15) {
 					$("#header nav li ").eq(5).addClass("navActive").siblings().removeClass("navActive");
 				}
 				if (index == 16) {
-					$("#header nav li").eq(6).addClass("navActive").siblings().removeClass("navActive");
+					$("#header nav li ").eq(5).addClass("navActive").siblings().removeClass("navActive");
 				}
 				if (index == 17) {
+					$("#header nav li").eq(6).addClass("navActive").siblings().removeClass("navActive");
+				}
+				if (index == 18) {
 					$("#header nav li").eq(6).addClass("navActive").siblings().removeClass("navActive");
 					$('help1').scroll(function () {
 						// if($(document).scrollTop()< $("#header").height()){
