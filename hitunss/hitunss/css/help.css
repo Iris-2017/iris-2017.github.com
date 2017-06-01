@@ -1,0 +1,118 @@
+#help1_content h1{
+    text-align:center;
+       color:black;
+       font-size:24px;
+}
+#help1_content>div{
+    width:73%;
+    margin:0 auto;
+    padding-top:100px;
+    color:black;
+}
+#help1_content h2{
+   color:#2aa1fb;
+   font-size: 16px;
+   margin-top:20px;
+   margin-bottom: 10px;
+   font-weight: 500;
+}
+#help1_content p{
+   color:black;
+      font-size: 14px;
+       font-weight: 500;
+       line-height:20px;
+}
+#footer{
+    background-color: #333;
+    height:43%;
+    width:100%;
+
+}
+.footer1{
+    float:left;
+}
+.footer33{
+   margin-left:10px;
+}
+.footer11{
+    font-size:12px;
+    color:#ddd;
+}
+.footer22{
+
+    width:18%;
+    padding:0 0 0 30px;
+    text-align:left;
+    margin-top:-3px;
+    border-right:1px solid #666;
+}
+.footer22 a{
+        font-size:12px;
+    color:#999;
+display:inline-block;
+width:40%;
+}
+/*.footer33{
+    width:1px;
+    height:100%;
+color:#fff;
+}*/
+.footer1 ul{
+   overflow: hidden;
+   margin-left:-5px;
+}
+.footer1 li{
+    list-style: none;
+    float:left;
+    height:15px;
+       line-height:15px;
+      margin:2px 0 0;
+        border-right:1px solid #666;
+}
+.footer1 li:last-child{
+    list-style: none;
+    float:left;
+    height:15px;
+       line-height:15px;
+      margin:2px 0 0;
+        border-right:none;
+}
+.footer1 li a{
+     margin:-2px 0 0;
+    padding:0 30px ;
+    font-size: 12px;
+    color:#ddd;
+
+}
+.footer22 a{
+    font-size: 12px;
+     -webkit-transform:scale(0.9);
+   transform:scale(0.9);
+   line-height: 25px;
+}
+.footer1 p{
+    font-size: 12px;
+      -webkit-transform:scale(0.9);
+   transform:scale(0.9);
+background-size: auto 20px!important;
+height:20px;
+padding-left:30px;
+line-height: 20px;
+margin:10px 0;
+color:#ddd;
+}
+.footer1 .help_qq{
+background: url(../image/other/qq.png) no-repeat;
+margin-top:20px;
+}
+.footer1 .help_iphone{
+background: url(../image/other/iphone.png) no-repeat;
+}
+.footer1 .help_service{
+background: url(../image/other/service.png) no-repeat;
+
+}
+.footer44>div{
+  text-align: center;
+  margin:10px 0;
+}
