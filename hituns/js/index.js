@@ -1,6 +1,6 @@
 ﻿$(function () {
-
-	if ($(window).width() > 768) {
+// alert($("body").width());
+	if ($('body').width() > 981) {
 		var Height = $(window).height();
 		var Width = $(window).width();
 		$('.slides li').height(Height);
@@ -176,12 +176,16 @@
 			}
 		});
 	} else {
+		$(".section").eq(0).hide();
 		$(".section").height(662);
+		// $("body").css({ "width": "900px" });
 		$("body").css({ "overflow": "auto" });
-		$("#dowebok").css({ "height": 1750 });
+		$("#dowebok").css({ "height":662 });
 		$("#help_content").css({ "height": 662 });
 		$("#footer").css({ "height": '20%' });
-
+	$(".shencontent>div").animate({ marginTop: "40px" }, 50, function () {
+						$(".shencontent>div").animate({ marginTop: "0" }, 800)
+					});
 		//$("#dowebok").height(662*17);
 		//服务模块轮播
 		var deployIndex = 0, timerIndex;
@@ -209,9 +213,24 @@
 		}, function () {
 			deployAuto(5000);
 		});
-		$(".shencontent").html('<div class="green"><strong>823,536</strong> <span>用户访问量</span></div><div class="red"><strong>723,536</strong><span>用户使用数</span></div><div class="orange"><strong>523,536</strong><span>网络测试数</span></div><div class="purple"><strong>623,536</strong><span>已服务客户</span></div>');
-		$(".shencontent>div").animate({ marginTop: "0" }, 800);
-
+		// $(".shencontent").html('<div class="green"><strong>823,536</strong> <span>用户访问量</span></div><div class="red"><strong>723,536</strong><span>用户使用数</span></div><div class="orange"><strong>523,536</strong><span>网络测试数</span></div><div class="purple"><strong>623,536</strong><span>已服务客户</span></div>');
+		// $(".shencontent>div").animate({ marginTop: "0" }, 800);
+		var deployIndex = 0, timerIndex;
+					function deployAuto1(time) {
+						//$('.rotate-circle').delay(400).addClass('animation');
+						timerIndex = setInterval(function () {
+							deployIndex++;
+							if (deployIndex == 5) {
+								deployIndex = 0
+							}
+							$('#index-product-content').removeClass().addClass('deploy-index-' + deployIndex);
+							/*$('.rotate-circle').removeClass('animation');
+							setTimeout(function () {
+								$('.rotate-circle').addClass('animation');
+							},1000);*/
+						}, time);
+					}
+					deployAuto1(4000);
 		var partnerhtml = '<div class="partner11">'
 			+ '  <img src="image/index/partner1.png" alt="">'
 			+ '<img src="image/index/partner2.png" alt="">'

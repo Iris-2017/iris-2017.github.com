@@ -36,6 +36,25 @@
     padding-bottom:50px;
 }
 }
+@media screen and (max-width:960px){
+.cases{
+    width:800px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:30px;
+}
+.case1{
+    width:200px;
+    height:auto;
+    float:left;
+    margin:0 30px;
+}
+#case{
+    height:100%;
+    padding-top:60px;
+    padding-bottom:50px;
+}
+}
 #case h1{
     font-size:30px;
     margin:25px auto 10px;

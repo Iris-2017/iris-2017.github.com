@@ -41,6 +41,27 @@
     margin:0 35px;
 }
 }
+@media screen and (max-width:960px){
+.prices{
+    width:800px;
+    height:600px;
+    overflow: hidden;
+    margin:230px auto ;
+    overflow: hidden;
+}
+.price11{
+    width:180px;
+    height:240px;
+    position: relative;
+    zoom:1;
+    color:black;
+    background-color:white;
+    font-size:14px;
+    padding:20px 0 0 20px;
+    float:left;
+    margin:0 20px;
+}
+}
 
 .price11 h2{
     font-weight:normal;
