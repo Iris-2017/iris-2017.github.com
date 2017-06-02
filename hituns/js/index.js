@@ -1,6 +1,6 @@
 ﻿
 $(function () {
-// alert($(window).width());
+// alert($(window).height());
 	if ($(window).width() >981) {
 		var Height = $(window).height();
 		var Width = $(window).width();
@@ -181,7 +181,7 @@ $(function () {
 		$(".section").eq(0).hide();
 		$(".section").height(662);
 		$("body").css({ "overflow": "auto" });
-		$("#dowebok").css({ "height":736 });
+		$("#dowebok").css({ "height":$(window).height() });
 		$("#help_content").css({ "height": 662 });
 		$("#footer").css({ "height": '20%' });
 	$(".shencontent>div").animate({ marginTop: "40px" }, 50, function () {
