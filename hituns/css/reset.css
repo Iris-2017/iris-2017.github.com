@@ -10,8 +10,12 @@ html, body, div, video,span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, b
 	font-size: 100%;
 	font-family:"Miscro YaHei";
 	vertical-align: baseline;
-
-
+}
+img{border:0;}
+a {
+	text-decoration: none;
+	color:#fff;
+	border:0;
 }
 :focus {
 	outline: 0;

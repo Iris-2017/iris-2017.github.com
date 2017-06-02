@@ -1,34 +1,7 @@
 ﻿
-// function IsPC() {
-//     var userAgentInfo = navigator.userAgent;
-//     var Agents = ["Android", "iPhone",
-//                 "SymbianOS", "Windows Phone",
-//                 "iPad", "iPod"];
-//     var flag = true;
-//     for (var v = 0; v < Agents.length; v++) {
-//         if (userAgentInfo.indexOf(Agents[v]) > 0) {
-//             flag = false;
-//             break;
-//         }
-//     }
-//     return flag;
-// };
-// $(document).ready(function(){
-//     var isPC=IsPC();
-//     if(isPC){
-//         $.getScript("./pc.js",function(){  //加载pc.js,成功后，并执行回调函数
-//               console.log("加载js文件");
-//             });
-//     }
-//     else{
-//         $.getScript("./mobile.js",function(){  //加载mobile.js,成功后，并执行回调函数
-//               console.log("加载js文件");
-//             });
-//     }
-// });
 $(function () {
-// alert($("body").width());
-	if ($('body').width() >1036) {
+// alert($(window).width());
+	if ($(window).width() >981) {
 		var Height = $(window).height();
 		var Width = $(window).width();
 		$('.slides li').height(Height);
@@ -207,7 +180,6 @@ $(function () {
 		
 		$(".section").eq(0).hide();
 		$(".section").height(662);
-		// $("body").css({ "width": "900px" });
 		$("body").css({ "overflow": "auto" });
 		$("#dowebok").css({ "height":736 });
 		$("#help_content").css({ "height": 662 });
