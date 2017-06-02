@@ -5,6 +5,9 @@ a {
 	color:#fff;
 }
 /*轮播*/
+#dowebok{
+    border:1px solid red;
+}
 a,img{border:0;}
 body{min-width:980px!important;}
 /* flexslider */

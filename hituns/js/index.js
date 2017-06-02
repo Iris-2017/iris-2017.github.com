@@ -28,7 +28,7 @@
 // });
 $(function () {
 // alert($("body").width());
-	if ($('body').width() > 981) {
+	if ($('body').width() >1036) {
 		var Height = $(window).height();
 		var Width = $(window).width();
 		$('.slides li').height(Height);
@@ -209,7 +209,7 @@ $(function () {
 		$(".section").height(662);
 		// $("body").css({ "width": "900px" });
 		$("body").css({ "overflow": "auto" });
-		$("#dowebok").css({ "height":662 });
+		$("#dowebok").css({ "height":736 });
 		$("#help_content").css({ "height": 662 });
 		$("#footer").css({ "height": '20%' });
 	$(".shencontent>div").animate({ marginTop: "40px" }, 50, function () {
