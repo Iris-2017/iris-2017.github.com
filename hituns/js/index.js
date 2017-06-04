@@ -1,6 +1,6 @@
 ﻿
 $(function () {
-// alert($(window).height());
+alert($(window).width());
 	if ($(window).width() >981) {
 		var Height = $(window).height();
 		var Width = $(window).width();
@@ -180,6 +180,7 @@ $(function () {
 		
 		$(".section").eq(0).hide();
 		$(".section").height(662);
+		$(".section:last-child").height("auto");
 		$("body").css({ "overflow": "auto" });
 		$("#dowebok").css({ "height":$(window).height() });
 		$("#help_content").css({ "height": 662 });

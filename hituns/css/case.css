@@ -1,3 +1,5 @@
+
+@media screen and (min-width:981px){
 .cases{
     min-width:1133px;
     width:60%;
@@ -16,6 +18,29 @@
     padding-top:80px;
     padding-bottom:50px;
 }
+}
+@media screen and (max-width:980px){
+.cases{
+    min-width:800px;
+    width:60%;
+    margin:0 auto;
+    overflow:hidden;
+    padding:30px;
+}
+.case1{
+    width:220px;
+    height:auto;
+    float:left;
+    margin:0 20px;
+}
+#case{
+    height:100%;
+    padding-top:40px;
+    padding-bottom:50px;
+}
+}
+
+
 #case h1{
     font-size:30px;
     margin:25px auto 10px;

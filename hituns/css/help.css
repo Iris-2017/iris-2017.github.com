@@ -3,12 +3,7 @@
        color:black;
        font-size:24px;
 }
-#help1_content>div{
-    width:73%;
-    margin:0 auto;
-    padding-top:100px;
-    color:black;
-}
+
 #help1_content h2{
    color:#2aa1fb;
    font-size: 16px;
@@ -22,17 +17,83 @@
        font-weight: 500;
        line-height:20px;
 }
-@media screen and (max-width:960px){
+@media screen and (max-width:980px){
    #help1{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: relative;
 	background-color:#000;
 	background-size: 100% 100%;
 		overflow-y: scroll;
 }
+#help1_content>div{
+    width:73%;
+    margin:0 auto;
+    padding-top:50px;
+    color:black;
+    
 }
-@media screen and (min-width:961px){
+#footer{
+    background-color: #333;
+    height:160px;
+    width:100%;
+
+}
+#help1_content {
+	width: 100%;
+	height: 662px;
+}
+.footer22{
+
+    width:30%;
+    padding:0 0 0 10px;
+    text-align:left;
+    margin-top:-3px;
+    border-right:1px solid #666;
+}
+.footer1 li a{
+     margin:-2px 0 0;
+    padding:0 10px ;
+    font-size: 12px;
+    color:#ddd;
+
+}
+    .footer-main{
+        width:82%;
+    margin:0 auto;
+    padding-top:20px;
+    overflow: hidden;
+    min-width:770px;
+}
+}
+
+@media screen and (min-width:981px){
+    .footer-main{
+        width:65%;
+    margin:0 auto;
+    padding-top:20px;
+    overflow: hidden;
+    min-width: 900px;
+}
+    .footer1 li a{
+     margin:-2px 0 0;
+    padding:0 30px ;
+    font-size: 12px;
+    color:#ddd;
+
+}
+    .footer22{
+
+    width:18%;
+    padding:0 0 0 30px;
+    text-align:left;
+    margin-top:-3px;
+    border-right:1px solid #666;
+}
+    #help1_content {
+	width: 100%;
+	height: 100%;
+}
     #help1{
 	width: 100%;
 	height: 130%;
@@ -41,6 +102,15 @@
 	background-size: 100% 100%;
 	overflow-y: scroll;
 }
+#help1_content>div{
+    width:73%;
+    height:400px;
+    color:black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-36.5%;
+    margin-top:-300px;
 }
 
 #footer{
@@ -49,6 +119,8 @@
     width:100%;
 
 }
+}
+
 .footer1{
     float:left;
 }
@@ -59,14 +131,7 @@
     font-size:12px;
     color:#ddd;
 }
-.footer22{
 
-    width:18%;
-    padding:0 0 0 30px;
-    text-align:left;
-    margin-top:-3px;
-    border-right:1px solid #666;
-}
 .footer22 a{
         font-size:12px;
     color:#999;
@@ -98,13 +163,7 @@ color:#fff;
       margin:2px 0 0;
         border-right:none;
 }
-.footer1 li a{
-     margin:-2px 0 0;
-    padding:0 30px ;
-    font-size: 12px;
-    color:#ddd;
 
-}
 .footer22 a{
     font-size: 12px;
      -webkit-transform:scale(0.9);
